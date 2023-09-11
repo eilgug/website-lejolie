@@ -1,0 +1,43 @@
+:root {
+    --primary-text-color: #B77C82;
+}
+
+.main-bg {
+    background-color: rgb(255, 243, 243);
+}
+
+.section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.section-white {
+    background-color: white;
+    color: black;
+}
+
+.section-pink {
+    background-color: rgb(255, 243, 243);
+    color: pink;
+}
+
+.primary-text {
+    color: var(--primary-text-color);
+}
+
+@font-face {
+    font-family: 'Bernita';
+    src: url('font/Bernita.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    font-size: x-small;
+}
+
+@media (min-width: 768px)  {
+    .footer {
+        font-size: small;
+    }
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Jolie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <script>
+    function mapsSelector() {
+      let lon = '9.1491172'
+      let lat = '45.6636545'
+      if ((navigator.platform.indexOf("iPhone") != -1) ||
+        (navigator.platform.indexOf("iPad") != -1) ||
+        (navigator.platform.indexOf("iPod") != -1))
+        window.open(`maps://maps.google.com/maps?daddr=${lat},${lon}&amp;ll=`);
+      else
+        window.open(`https://maps.google.com/maps?daddr=${lat},${lon}&amp;ll=`);
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <div name="home" class="section-pink d-flex flex-column align-items-center justify-content-between pb-5 pt-2"
+    style="height: 100vh;">
+
+    <nav class="navbar navbar-expand nav-underline justify-content-center fixed-top main-bg">
+      <div class="nav navbar-nav">
+        <a class="nav-item nav-link primary-text" href="#" aria-current="page">Home <span
+            class="visually-hidden">(current)</span></a>
+        <a class="nav-item nav-link primary-text" href="#aboutus">About us</a>
+        <a class="nav-item nav-link primary-text" href="#services">Servizi</a>
+        <a class="nav-item nav-link primary-text" href="#wherecontact">Contatti</a>
+      </div>
+    </nav>
+
+    <div class="my-auto mx-auto">
+      <img src="assets/logo.png" class="img-fluid" style="max-height: 500px;" />
+    </div>
+
+    <div class="justify-content-center mt-5">
+      <div class="text-center primary-text">
+        <p>Via C. Colombo, 78, Meda (MI)<br>
+          Tel: 3451234567 | Mail: info@lejolie.it</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="aboutus" class="py-5">
+    <div
+      class="section-white container d-flex flex-column align-items-center justify-content-around mt-3 mt-md-0 min-vh-100">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-around">
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum."
+        </p>
+        <img src="assets/estetica.png" class="img-fluid" style="max-height: 400px;" />
+      </div>
+      <div class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-around">
+        <img src="assets/parrucchiera.png" class="img-fluid" style="max-height: 400px;" />
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum."
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="section-pink">
+    <div
+      class="container d-flex flex-column flex-md-row align-items-center justify-content-around mt-3 mt-md-0 min-vh-100">
+      <h1>DEVI DIRMI CHE METTERE QUI 💅🏻</h1>
+    </div>
+  </div>
+
+  <div id="wherecontact" class="section-white py-5">
+    <div
+      class="container d-flex flex-column flex-md-row align-items-center justify-content-around mt-3 mt-md-0 min-vh-100">
+
+      <div class="d-flex flex-column align-content-around justify-content-around">
+        <div class="d-flex flex-column align-items-center justify-content-around text-center primary-text">
+
+          <h5>CONTATTI</h5>
+          <table>
+            <tr>
+              <td class="px-2 text-end w-50"><b>Leila</b></td>
+              <td class="px-2 text-start">3451234567</td>
+            </tr>
+            <tr>
+              <td class="px-2 text-end"><b>Giorgia</b></td>
+              <td class="px-2 text-start">3451234567</td>
+            </tr>
+            <tr>
+              <td class="px-2 text-end"><b>Info</b></td>
+              <td class="px-2 text-start" mailto="info@lejolie.it">info@lejolie.it</td>
+            </tr>
+          </table>
+
+          <!-- AIzaSyDjAGPvYx2feEfSgDJJkYAsGUxwXZ_5_gI -->
+          <div class="text-center primary-text">
+            <span>
+              <a href="https://www.instagram.com/le.jolie.beautylab/"><img width="48" height="48"
+                  src="https://img.icons8.com/color-glass/48/instagram-new.png" alt="instagram-new" /></a>
+              <img width="48" height="48" src="https://img.icons8.com/color-glass/48/whatsapp.png" alt="whatsapp" />
+            </span>
+          </div>
+        </div>
+
+        <div class="text-center primary-text mt-5">
+          <h5>ORARI</h5>
+          <table class="mx-auto">
+            <tr>
+              <td class="px-2 text-end"><b>Lunedì</b></td>
+              <td class="px-2 text-start">Chiuso</td>
+            </tr>
+            <tr>
+              <td class="px-2 text-end"><b>Martedì</b></td>
+              <td class="px-2 text-start">8:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td class="px-2 text-end"><b>Mercoledì</b></td>
+              <td class="px-2 text-start">8:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td class="px-2 text-end"><b>Giovedì</b></td>
+              <td class="px-2 text-start">8:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td class="px-2 text-end"><b>Venerdì</b></td>
+              <td class="px-2 text-start">8:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td class="px-2 text-end"><b>Sabato</b></td>
+              <td class="px-2 text-start">8:00 - 17:00</td>
+            </tr>
+          </table>
+        </div>
+
+
+      </div>
+
+      <div class="d-flex flex-column">
+        <!-- <img src="assets/map_placeholder.png" class="img-fluid" style="max-height: 400px;" /> -->
+        <iframe width="350" height="350"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=9.14589285850525%2C45.66221185382794%2C9.152973890304567%2C45.6654659978779&amp;layer=mapnik&amp;marker=45.66383894949717%2C9.149433374404907"></iframe>
+        <div class="d-flex flex-column justify-content-center align-items-center mt-2" onclick="mapsSelector()">
+          <img width="48" height="48" src="https://img.icons8.com/color-glass/48/pickup-point.png" alt="pickup-point" />
+          <div class="text-center primary-text">
+            <p>Via C. Colombo, 78, Meda (MI)
+            <p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center footer mb-2">
+    Made by <a href="https://linktr.ee/eilgug">@Roberto Guglielmin</a>
+  </div>
+
+
+
+</body>
+
+</html>
