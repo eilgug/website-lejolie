@@ -12,18 +12,6 @@
 
 <body>
 
-  <script>
-    function mapsSelector() {
-      let lon = '9.1491172'
-      let lat = '45.6636545'
-      if ((navigator.platform.indexOf("iPhone") != -1) ||
-        (navigator.platform.indexOf("iPad") != -1) ||
-        (navigator.platform.indexOf("iPod") != -1))
-        window.open(`maps://maps.google.com/maps?daddr=${lat},${lon}&amp;ll=`);
-      else
-        window.open(`https://maps.google.com/maps?daddr=${lat},${lon}&amp;ll=`);
-    }
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
@@ -45,10 +33,11 @@
       <img src="assets/logo.png" class="img-fluid" style="max-height: 500px;" />
     </div>
 
-    <div class="justify-content-center mt-5">
+    <div class="justify-content-center mt-3">
       <div class="text-center primary-text">
-        <p>Via C. Colombo, 78, Meda (MI)<br>
-          Tel: 3451234567 | Mail: info@lejolie.it</p>
+        <a class="nav-link" href="#wherecontact"><p>Via C. Colombo, 78, Meda (MI)<br>
+          Tel: 3451234567 | 3451234567<br>
+          Mail: lejolie@gmail.com</p></a>
       </div>
     </div>
 
@@ -87,30 +76,37 @@
     </div>
   </div>
 
-  <div id="wherecontact" class="section-white py-5">
-    <div
-      class="container d-flex flex-column flex-md-row align-items-center justify-content-around mt-3 mt-md-0 min-vh-100">
+  <div id="wherecontact" class="section-white pt-5">
+    <div class="container d-flex flex-column align-items-center justify-content-around min-vh-100 max-vh-100">
 
-      <div class="d-flex flex-column align-content-around justify-content-around">
-        <div class="d-flex flex-column align-items-center justify-content-around text-center primary-text">
+      <div class="d-flex w-100">
+        <!-- <img src="assets/map_placeholder.png" class="img-fluid" style="max-height: 400px;" /> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492.9160947629974!2d9.149393042329022!3d45.663783143769244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478697d97ba0d6c9%3A0xbeea6050a762de7d!2sVia%20Cristoforo%20Colombo%2C%2078%2C%2020821%20Meda%20MB!5e0!3m2!1sen!2sit!4v1695050625765!5m2!1sen!2sit"
+          class="w-100" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row">
+        <div class="d-flex flex-column primary-text text-center">
 
           <h5>CONTATTI</h5>
           <table>
             <tr>
               <td class="px-2 text-end w-50"><b>Leila</b></td>
-              <td class="px-2 text-start">3451234567</td>
+              <td class="px-2 text-start"><a class="primary-text" href="tel:3451234567">3451234567</a></td>
             </tr>
             <tr>
               <td class="px-2 text-end"><b>Giorgia</b></td>
-              <td class="px-2 text-start">3451234567</td>
+              <td class="px-2 text-start"><a class="primary-text" href="tel:3451234567">3451234567</a></td>
             </tr>
             <tr>
               <td class="px-2 text-end"><b>Info</b></td>
-              <td class="px-2 text-start" mailto="info@lejolie.it">info@lejolie.it</td>
+              <td class="px-2 text-start"><a class="primary-text" href="mailto:lejolie@gmail.com">lejolie@gmail.com</a>
+              </td>
             </tr>
           </table>
 
-          <!-- AIzaSyDjAGPvYx2feEfSgDJJkYAsGUxwXZ_5_gI -->
           <div class="text-center primary-text">
             <span>
               <a href="https://www.instagram.com/le.jolie.beautylab/"><img width="48" height="48"
@@ -120,7 +116,7 @@
           </div>
         </div>
 
-        <div class="text-center primary-text mt-5">
+        <div class="text-center primary-text mt-md-0 ms-md-5 mt-3">
           <h5>ORARI</h5>
           <table class="mx-auto">
             <tr>
@@ -149,29 +145,15 @@
             </tr>
           </table>
         </div>
-
-
       </div>
 
-      <div class="d-flex flex-column">
-        <!-- <img src="assets/map_placeholder.png" class="img-fluid" style="max-height: 400px;" /> -->
-        <iframe width="350" height="350"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=9.14589285850525%2C45.66221185382794%2C9.152973890304567%2C45.6654659978779&amp;layer=mapnik&amp;marker=45.66383894949717%2C9.149433374404907"></iframe>
-        <div class="d-flex flex-column justify-content-center align-items-center mt-2" onclick="mapsSelector()">
-          <img width="48" height="48" src="https://img.icons8.com/color-glass/48/pickup-point.png" alt="pickup-point" />
-          <div class="text-center primary-text">
-            <p>Via C. Colombo, 78, Meda (MI)
-            <p>
-          </div>
-
-        </div>
+      <div class="text-center footer">
+        Made by <a href="https://linktr.ee/eilgug">@Roberto Guglielmin</a>
       </div>
     </div>
   </div>
 
-  <div class="text-center footer mb-2">
-    Made by <a href="https://linktr.ee/eilgug">@Roberto Guglielmin</a>
-  </div>
+
 
 
 
